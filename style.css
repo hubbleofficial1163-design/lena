@@ -94,7 +94,7 @@ h2 {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url('2.png') no-repeat center center;
+    background: url('2.PNG') no-repeat center center;
     background-size:  100% auto;
     display: flex;
     align-items: center;
@@ -349,7 +349,7 @@ input[type="checkbox"] {
 .wedding-footer {
     width: 100vw;
     /* height: 100vh; */
-    background: url('2.jpeg') no-repeat center center;
+    background: url('2.JPEG') no-repeat center center;
     background-size:  100% auto;
     display: flex;
     align-items: center;
@@ -422,4 +422,5 @@ input[type="checkbox"] {
     .timer-title {
         font-size: 20px;
     }
+
 }
