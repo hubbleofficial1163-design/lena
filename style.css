@@ -93,7 +93,7 @@ h2 {
     justify-content: center;
     text-align: center;
     color: #000000;
-    margin-top: -25vh;
+    margin-top: -15vh;
     z-index: 2;
 }
 
@@ -401,4 +401,5 @@ input[type="checkbox"] {
         font-size: 20px;
     }
 }
+
 
