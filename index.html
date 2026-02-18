@@ -8,12 +8,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- В hero секцию, после content -->
     <section class="hero">
         <div class="content">
             <h1>Алексей</h1>
             <p class="ampersand">&</p>
             <h2>Екатерина</h2>
             <p class="date">15 / 11 / 2026</p>
+        </div>
+        
+        <!-- Добавить это -->
+        <div class="music-player">
+            <div class="music-circle">
+                <button id="playBtn" class="play-triangle" style="display: flex;">▶</button>
+                <button id="pauseBtn" class="pause-button" style="display: none;">⏸</button>
+                <svg class="circle-text" viewBox="0 0 100 100">
+                    <defs>
+                        <path id="circle" d="M 50,50 m -37,0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/>
+                    </defs>
+                    <text font-size="12">
+                        <textPath href="#circle" fill="#333" font-family="Georgia" letter-spacing="1">
+                            • Включите музыку • Включите музыку • Включите
+                        </textPath>
+                    </text>
+                </svg>
+            </div>
+            <audio id="bgMusic" src="1.mp3" loop preload="auto"></audio>
         </div>
     </section>
 
@@ -26,7 +46,7 @@
     <!-- Третья секция (адрес на фоне 3.png) -->
     <section class="address">
         <div class="address-content">
-            <p class="venue">Посейдон, Загорьевская 13</p>
+            <p class="venue">Посейдон, Загорьевская ул., 13, Москва</p>
         </div>
     </section>
 
@@ -34,10 +54,19 @@
     <section class="photo-four"></section>
 
     <!-- Пятая секция (фото 5) -->
-    <section class="photo-five"></section>
+<!-- Пятая секция (фото 5) -->
+    <section class="photo-five">
+        <img src="dress.png" alt="dress" class="overlay-dress">
+    </section>
 
     <!-- Шестая секция (фото 6) -->
-    <section class="photo-six"></section>
+    <section class="photo-six">
+        <div class="gift-note">
+            Будем рады вложению<br>
+            в наше начало семейной жизни<br>
+            <span>Ваши пожелания и конверты<br>согреют наше сердечко</span>
+        </div>
+    </section>
 
     <!-- Секция анкеты гостя -->
     <!-- Секция анкеты гостя -->
