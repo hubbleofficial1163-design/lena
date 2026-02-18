@@ -578,12 +578,7 @@ input[type="checkbox"] {
     }
 }
 
-@media (max-width: 768px) { /* для всех мобильных */
-    .music-player {
-        bottom: 200px !important; /* опускает вниз */
-        right: 148px !important;
-    }
-}
+
 
 .pause-button {
     position: absolute;
@@ -625,6 +620,37 @@ input[type="checkbox"] {
     top: 50%;
     transform: translateY(-50%); /* убираем это */
     top: 80% !important; /* меняй это значение - меньше цифра = выше, больше = ниже */
+}
+
+
+/* ===== ГОВНО-ПЛЕЕР ДЛЯ МОБИЛ ===== */
+@media (max-width: 768px) {
+    .music-player {
+        position: absolute !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        left: auto !important;
+        top: auto !important;
+        z-index: 9999 !important;
+    }
+    
+    .music-circle {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    
+    .play-pause-btn, .play-triangle {
+        width: 44px !important;
+        height: 44px !important;
+    }
+}
+
+/* Для совсем маленьких */
+@media (max-width: 400px) {
+    .music-player {
+        bottom: 10px !important;
+        right: 10px !important;
+    }
 }
 
 
