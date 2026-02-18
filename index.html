@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Алексей & Екатерина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="content">
+            <h1>Алексей</h1>
+            <p class="ampersand">&</p>
+            <h2>Екатерина</h2>
+            <p class="date">15 / 11 / 2026</p>
+        </div>
+    </section>
+
+    <section class="invitation">
+        <div class="invitation-content">
+            <p class="invitation-text">Мы рады сообщить Вам, что совсем скоро состоится самое главное торжество в нашей жизни - день нашей свадьбы!</p>
+            <p class="invitation-date">01 августа 2026</p>
+        </div>
+    </section>
+
+    <!-- Третья секция (адрес на фоне 3.png) -->
+    <section class="address">
+        <div class="address-content">
+            <p class="venue">Посейдон, Загорьевская 13</p>
+        </div>
+    </section>
+
+    <!-- Четвёртая секция (фото 4.png) -->
+    <section class="photo-four"></section>
+
+    <!-- Пятая секция (фото 5) -->
+    <section class="photo-five"></section>
+
+    <!-- Шестая секция (фото 6) -->
+    <section class="photo-six"></section>
+
+    <!-- Секция анкеты гостя -->
+    <!-- Секция анкеты гостя -->
+    <section class="guest-form">
+        <div class="form-container">
+            <h3>Анкета гостя</h3>
+            <p class="response-deadline">Просим дать ответ до 1 июля</p>
+            
+            <div class="form-group">
+                <label>ФИО</label>
+                <input type="text" placeholder="Иванов Иван Иванович" class="line-input">
+            </div>
+            
+            <div class="form-group">
+                <label>Подтверждение присутствия</label>
+                <div class="vertical-group">
+                    <label class="vertical-option">
+                        <input type="radio" name="attendance" value="yes"> Буду
+                    </label>
+                    <label class="vertical-option">
+                        <input type="radio" name="attendance" value="no"> Не буду
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Буду один / с парой</label>
+                <div class="vertical-group">
+                    <label class="vertical-option">
+                        <input type="radio" name="companion" value="alone"> Один / Одна
+                    </label>
+                    <label class="vertical-option">
+                        <input type="radio" name="companion" value="couple"> С парой
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Предпочтения по алкоголю</label>
+                <div class="vertical-group">
+                    <label class="vertical-option">
+                        <input type="checkbox" value="vodka"> Водка
+                    </label>
+                    <label class="vertical-option">
+                        <input type="checkbox" value="cognac"> Коньяк
+                    </label>
+                    <label class="vertical-option">
+                        <input type="checkbox" value="red_wine"> Вино красное
+                    </label>
+                    <label class="vertical-option">
+                        <input type="checkbox" value="white_wine"> Вино белое
+                    </label>
+                </div>
+            </div>
+            
+            <button class="submit-btn">Отправить</button>
+        </div>
+    </section>
+
+
+    <!-- Футер с таймером -->
+    <!-- Футер с таймером -->
+    <footer class="wedding-footer">
+        <div class="timer-container">
+            <div class="timer" id="timer">
+                <div class="timer-item">
+                    <span class="timer-number" id="days">00</span>
+                    <span class="timer-label">дней</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number" id="hours">00</span>
+                    <span class="timer-label">часов</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number" id="minutes">00</span>
+                    <span class="timer-label">минут</span>
+                </div>
+                <div class="timer-item">
+                    <span class="timer-number" id="seconds">00</span>
+                    <span class="timer-label">секунд</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
