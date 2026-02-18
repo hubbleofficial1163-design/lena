@@ -176,7 +176,7 @@ h2 {
 .photo-four {
     width: 100vw;
     height: 100vh;
-    background: url('4.png') no-repeat center center;
+    background: url('4.JPEG') no-repeat center center;
     background-size: contain;
     background-color: #e1edf8;
     background-position: center center;
@@ -401,5 +401,6 @@ input[type="checkbox"] {
         font-size: 20px;
     }
 }
+
 
 
