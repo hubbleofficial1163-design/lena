@@ -627,7 +627,7 @@ input[type="checkbox"] {
 @media (max-width: 768px) {
     .music-player {
         position: absolute !important;
-        bottom: 200px !important;
+        bottom: 250px !important;
         right: 140px !important;
         left: auto !important;
         top: auto !important;
@@ -648,10 +648,11 @@ input[type="checkbox"] {
 /* Для совсем маленьких */
 @media (max-width: 400px) {
     .music-player {
-        bottom: 200px !important;
+        bottom: 250px !important;
         right: 140px !important;
     }
 }
+
 
 
 
