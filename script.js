@@ -33,3 +33,35 @@ updateTimer();
 setInterval(updateTimer, 1000);
 
 console.log("Футер с таймером добавлен, фон 2.jpeg");
+
+
+// Музыкальный плеер
+document.addEventListener('DOMContentLoaded', function() {
+    const playBtn = document.getElementById('playPauseBtn');
+    const bgMusic = document.getElementById('bgMusic');
+    
+    playBtn.addEventListener('click', function() {
+        if (bgMusic.paused) {
+            bgMusic.play();
+            playBtn.classList.add('paused');
+            playBtn.textContent = '⏸';
+        } else {
+            bgMusic.pause();
+            playBtn.classList.remove('paused');
+            playBtn.textContent = '▶';
+        }
+    });
+});
+
+
+playBtn.addEventListener('click', function() {
+    bgMusic.play();
+    playBtn.style.display = 'none';
+    pauseBtn.style.display = 'flex';
+});
+
+pauseBtn.addEventListener('click', function() {
+    bgMusic.pause();
+    playBtn.style.display = 'flex';
+    pauseBtn.style.display = 'none';
+});
