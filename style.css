@@ -580,7 +580,7 @@ input[type="checkbox"] {
 
 @media (max-width: 768px) { /* для всех мобильных */
     .music-player {
-        bottom: 330px !important; /* опускает вниз */
+        bottom: 300px !important; /* опускает вниз */
         right: 148px !important;
     }
 }
@@ -626,6 +626,7 @@ input[type="checkbox"] {
     transform: translateY(-50%); /* убираем это */
     top: 80% !important; /* меняй это значение - меньше цифра = выше, больше = ниже */
 }
+
 
 
 
