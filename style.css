@@ -163,7 +163,8 @@ h2 {
     font-weight: 500;
     letter-spacing: 1px;
     text-shadow: 0 0 8px rgba(255,255,255,0.5);
-    text-transform: uppercase;
+    color: #717171;
+
 }
 
 @media (min-width: 500px) {
@@ -330,7 +331,7 @@ input[type="checkbox"] {
 /* ===== ФУТЕР С ТАЙМЕРОМ ===== */
 .wedding-footer {
     width: 100vw;
-    background: url('2.jpg') no-repeat center center;
+    background: url('2.JPG') no-repeat center center;
     background-size: 100% auto;
     display: flex;
     align-items: center;
@@ -339,6 +340,8 @@ input[type="checkbox"] {
     padding: 0;
     position: relative;
     height: 50vh;
+    margin-top: -40px;
+    background-color: #e1edf9;
 }
 
 .timer-container {
@@ -402,6 +405,220 @@ input[type="checkbox"] {
     }
 }
 
+.gift-note {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: clamp(20px, 5vw, 34px);
+    line-height: 1.6;
+    color: #000000;
+    z-index: 3;
+    padding: 20px;
+    font-weight: 600; /* жирный */
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.8); /* свечение */
+}
 
+.gift-note span {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+/* ===== ТЕКСТ НА ФОТО 6 ===== */
+.photo-six {
+    position: static;
+}
+
+.gift-note {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: clamp(20px, 5vw, 34px);
+    line-height: 1.6;
+    color: #626161;
+    z-index: 3;
+    padding: 40px 20px;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgba(255,255,255,0.8);
+    left: 0;        /* добавить */
+    right: 0;       /* добавить */
+}
+
+.gift-note span {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* ===== НАЛОЖЕНИЕ DRESS.png ПОВЕРХ ФОТО 5 ===== */
+.photo-five {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-dress {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%; /* или конкретные пиксели, например 300px */
+    max-width: 400px;
+    height: auto;
+    z-index: 10;
+    pointer-events: none; /* чтобы не мешала кликам */
+}
+
+/* ===== МУЗЫКАЛЬНЫЙ ПЛЕЕР ===== */
+.music-player {
+    position: absolute;
+    bottom: 80px;
+    right: 40px;
+    z-index: 10;
+}
+
+.music-circle {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.play-triangle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 3px; /* для центрирования треугольника */
+
+    
+}
+
+.play-triangle:hover {
+    transform: scale(1.05);
+    background-color: #ffffff;
+}
+
+.circle-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotate 10s linear infinite;
+}
+
+.circle-text text {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* пауза */
+.play-triangle.paused {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 500px) {
+    .music-player {
+        bottom: 350px;
+        right: 150px;
+    }
+    
+    .music-circle {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .play-triangle {
+        width: 46px;
+        height: 46px;
+        font-size: 16px;
+        color: #a5b8ce;
+    }
+    
+    .circle-text text {
+        font-size: 6px;
+    }
+}
+
+
+.pause-button {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 28px;
+    color: #a5b8ce;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Специально для палок */
+    letter-spacing: -2px; /* сближает палки если надо */
+    padding: 0;
+    line-height: 1;
+}
+
+.play-triangle.paused {
+    /* двигаем текст внутри кнопки */
+    text-indent: -3px;  /* отрицательное - влево, положительное - вправо */
+        padding-top: 6px; /* или через transform только текст (не работает везде) */
+    /* transform: translateX(-2px); */
+}
+
+.play-triangle.paused::before,
+.play-triangle.paused::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background-color: #333;
+    top: 50%;
+    transform: translateY(-50%); /* убираем это */
+    top: 80% !important; /* меняй это значение - меньше цифра = выше, больше = ниже */
+}
 
 
