@@ -628,7 +628,7 @@ input[type="checkbox"] {
     .music-player {
         position: absolute !important;
         bottom: 20px !important;
-        right: 20px !important;
+        right: 140px !important;
         left: auto !important;
         top: auto !important;
         z-index: 9999 !important;
@@ -649,9 +649,10 @@ input[type="checkbox"] {
 @media (max-width: 400px) {
     .music-player {
         bottom: 10px !important;
-        right: 10px !important;
+        right: 140px !important;
     }
 }
+
 
 
 
