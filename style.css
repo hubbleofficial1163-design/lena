@@ -330,7 +330,7 @@ input[type="checkbox"] {
 /* ===== ФУТЕР С ТАЙМЕРОМ ===== */
 .wedding-footer {
     width: 100vw;
-    background: url('2.JPG') no-repeat center center;
+    background: url('2.jpg') no-repeat center center;
     background-size: 100% auto;
     display: flex;
     align-items: center;
@@ -401,3 +401,4 @@ input[type="checkbox"] {
         font-size: 20px;
     }
 }
+
