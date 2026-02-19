@@ -406,7 +406,7 @@ input[type="checkbox"] {
 
 .gift-note {
     position: relative;
-    top: 50%;
+    top: 53%;
     transform: translateY(-50%);
     width: 90%;
     max-width: 600px;
